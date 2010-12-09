@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>{{ page.title }}</title>
+	<meta name="author" content="Jeffrey Alan Huston" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-12381984-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body class="home">
+	<div id="outer-wrapper">
+		<div id="inner-wrapper" class="page">
+			<div id="header">
+				<h1 class="site-home">Jeffrey Alan Huston</h1>
+			</div>
+				{% include navigation.html %}
+			<div class="content">
+				{{ content }}
+			</div>
+		</div> <!-- inner-wrapper -->
+	</div> <!-- outer-wrapper -->
+	<div id="footer" class="clear">
+		<div id="footer-content">
+			<ul class="footer-block">
+				<li class="emboss">Artifact Streams</li>
+				<li><a href="http://artifactuals.posterous.com" target="_blank">artifactuals.posterous.com</a></li>
+				<li><a href="http://codedoval.posterous.com" target="_blank">codedoval.posterous.com</a></li>
+			</ul>
+			<ul class="footer-block">
+			</ul>
+			<div class="footer-block right text-right">
+				<span>powered by <a href="http://github.com/mojombo/jekyll" target="_blank">jekyll </a></span>			
+			</div>
+		</div>
+	</div>
+</body>
+</html>

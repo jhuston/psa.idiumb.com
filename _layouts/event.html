@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<h2>{{ page.desc }}</h2>
+<h2>{{ page.date | date: "%A, %B %d %Y"" }} {{ page.time }}</h2>
+
+	{{ content }}
+	
+{% if page.has_comments %}
+{% include has_comments.html %}
+{% endif %}

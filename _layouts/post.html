@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<h2>{{ page.desc }}</h2>
+<div class="left">
+	<span class="post-date">{{ page.date | date: "%A, %B %d %Y"" }} {{ page.time }}</span>
+	<div class="post-wrapper">
+	
+		{{ content }}
+
+	</div>
+	<span>{{ site.author }}</span>
+
+{% if page.has_comments %}
+{% include has_comments.html %}
+{% endif %}
+</div>

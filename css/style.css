@@ -1,0 +1,276 @@
+/* -------------------------------------------------------------- 
+  
+   reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body { 
+  line-height: 1.5; 
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+/* -------------------------------------------------------------- 
+
+   typography.css
+   * Sets up some sensible default typography.
+   
+-------------------------------------------------------------- */
+
+/* Default font settings. 
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+html { font-size:100.01%; }
+body { 
+  font-size: 75%;
+  color: #222; 
+  background: #fff;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+h1 img, h2 img, h3 img, 
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p           { margin: 0 0 1.5em; }
+p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
+
+a:focus, 
+a:hover     { color: #000; }
+a           { color: #009; text-decoration: underline; }
+
+blockquote  { margin: 1.5em; color: #666; font-style: italic; }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666; }
+
+pre 				{ margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 0;  }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+li{
+	list-style: none;
+}
+/* Tables
+-------------------------------------------------------------- */
+
+table       { margin-bottom: 1.4em; width:100%; }
+th          { font-weight: bold; }
+thead th 		{ background: #c3d9ff; }
+th,td,caption { padding: 4px 10px 4px 5px; }
+tr.even td  { background: #e5ecf9; }
+tfoot       { font-style: italic; }
+caption     { background: #eee; }
+
+
+/* Misc classes
+-------------------------------------------------------------- */
+
+.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide       { display: none; }
+
+.quiet      { color: #666; }
+.loud       { color: #000; }
+.highlight  { background:#ff0; }
+.added      { background:#060; color: #fff; }
+.removed    { background:#900; color: #fff; }
+
+.first      { margin-left:0; padding-left:0; }
+.last       { margin-right:0; padding-right:0; }
+.top        { margin-top:0; padding-top:0; }
+.bottom     { margin-bottom:0; padding-bottom:0; }
+
+/* Links
+-------------------------------------------------------------*/
+a, a:link, a:visited{
+	outline: none;
+	text-decoration: none;
+	color: #802206;
+}
+a:hover{
+	color:#c43c1c;
+}
+
+/* JAH CUSTOM STRUCTURES */
+body{
+	background-color: #FFF;
+}
+
+#outer-wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#inner-wrapper{
+	width: 1000px;
+	background-color: #FFF;
+	padding-bottom: 50px;
+}
+#header{
+	width: 100%;
+	height: 355px;
+/* 	background: url(images/header.png) no-repeat; */
+	background: url(/images/codedOvalArtifactuals.jpg) no-repeat;
+}
+#header h1{
+	text-indent: -9999px;
+}
+#navigation{
+	color: #fff;
+	width:100%;
+	height: 35px;
+	margin-top: 0px;
+	background: #333;
+}
+
+#navigation ul li{
+	list-style: none;
+	float: left;
+	line-height: 35px;
+	padding: 0 1em 0 1em;
+}
+
+#navigation a, #navigation a:link, #navigation a:visited{
+	color: #FFF;
+}
+#navigation a:hover{
+	color: #c43c1c;
+}
+
+.content{
+	padding: 1em;
+	font-size: 13px;
+	min-height: 200px;
+}
+
+.content .left{
+	width: 45%;
+	float: left;
+}
+.content .right{
+	float: right;
+	width: 50%;
+}
+.content .event-list{
+	border-left: 1px solid #999;
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.content .full-width{
+	width: 100%;
+}
+#footer{
+	width: 100%;
+	min-height: 50px;
+	max-height: 10%;
+	clear: both;
+	background-color: #F1F1F1;
+	bottom: 0px;
+	border-top: 2px solid #DDDDDD;
+	border-bottom: 1px solid #BBB;
+}
+#footer-content{
+	text-shadow: 1px 1px white, 1px 1px #333;
+	width: 970px;
+	margin: 0px auto;
+	padding: 1em;
+	color: #777;
+	overflow: auto;
+}
+.emboss{
+	text-shadow: 1px 1px #FFF;
+}
+.footer-block{
+	width: 30%;
+	float: left;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.text-right{
+	text-align: right;
+}
+.footer-block span{
+	line-height: 50px;
+}
+
+/* Post types */
+.reflection{
+	color: #664653;
+}
+.post-wrapper{
+	margin: 30px 0;
+}
+.post-wrapper p{
+	padding: 0px;
+	margin: 0.5em;
+}

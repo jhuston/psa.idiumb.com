@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>CodedOval::Artifactuals EVENTS</title>
+ <link href="http://psa.idiumb.com/events.atom.xml" rel="self"/>
+ <link href="http://psa.idiumb.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://psa.idiumb.com/</id>
+ <author>
+   <name>Jeffrey Alan Huston</name>
+   <email>jeff@idiumb.com</email>
+ </author>
+
+ {% for post in site.categories.events %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://psa.idiumb.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://psa.idiumb.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
