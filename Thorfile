@@ -21,7 +21,7 @@ class Blog < Thor
     abort("usage: thor blog:new 'Post Title'") if title.nil?
 
     post = TEMPLATE.sub('TITLE', title)
-    post = TEMPLATE.sub('POST',options[:layout])
+    post = post.sub('POST',options[:layout])
     date = Time.now.strftime('%Y-%m-%d')
     file = "blog/_posts/#{date}-#{title.downcase.gsub(/[!.,;:+=-]/, '').gsub(/\W+/, '-')}.md"
     File.open(file, 'wb') { |f| f.write(post) }
