@@ -1,3 +1,4 @@
-exclude: JAHjekyll.tmproj README.md _drafts deploy.yml REVISION TODO Thorfile
+exclude: psa.idiumb.com.tmproj README.md _drafts TODO Thorfile
 permalink: pretty
 author: Jeffrey Alan Huston
+markdown: rdiscount

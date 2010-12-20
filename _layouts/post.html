@@ -1,18 +1,17 @@
 ---
-layout: default
+layout: left_column
 ---
-<h2>{{ page.title }}</h2>
-<h2>{{ page.desc }}</h2>
-<div class="left">
-	<span class="post-date">{{ page.date | date: "%A, %B %d %Y"" }} {{ page.time }}</span>
-	<div class="post-wrapper">
-	
+<div class="post-page-container">
+	<h2 class="post-title">{{ page.title }}</h2>
+	<p class="post-date">{{ page.date | date: "%A, %B %d, %Y" }} - {{ site.author }}</p>
+	<div class="post-content">
 		{{ content }}
-
 	</div>
-	<span>{{ site.author }}</span>
-
 {% if page.has_comments %}
 {% include has_comments.html %}
 {% endif %}
+</div>
+
+
+
 </div>

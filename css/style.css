@@ -48,7 +48,7 @@ a img { border: none; }
 html { font-size:100.01%; }
 body { 
   font-size: 75%;
-  color: #222; 
+  color: #444; 
   background: #fff;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
@@ -57,10 +57,10 @@ body {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #333; }
 
 h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
-h2 { font-size: 2em; margin-bottom: 0.75em; }
+h2 { font-size: 2em; margin-bottom: 0.25em; }
 h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
 h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
 h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
@@ -209,12 +209,13 @@ body{
 }
 
 .content .left{
-	width: 45%;
+	width: 55%;
 	float: left;
 }
 .content .right{
 	float: right;
-	width: 50%;
+	width: 40%;
+	text-align: left;
 }
 .content .event-list{
 	border-left: 1px solid #999;
@@ -253,6 +254,9 @@ body{
 .right{
 	float: right;
 }
+.justify-right{
+	text-align: right;
+}
 .left{
 	float: left;
 }
@@ -273,4 +277,15 @@ body{
 .post-wrapper p{
 	padding: 0px;
 	margin: 0.5em;
+}
+.post-title{
+	text-transform: uppercase;
+	color: #664653;
+}
+.post-date{
+	color: #888888;
+}
+.post-container{
+	margin-bottom: 10px;
+	border-bottom: 1px solid #999;
 }

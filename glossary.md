@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: left_column
 title: "CodedOval::Glossary"
 ---
-<div class="left">
-	<h2>Glossary of Terms*</h2>
-	<dl>
+## Glossary of Terms*
+<dl>
 		<dt>artifact</dt>
 		<dd>an (un)intentional record of the process of creation.</dd>
 		
@@ -28,6 +27,6 @@ title: "CodedOval::Glossary"
 		
 		<dt>duck station</dt>
 		<dd> a specific portable recording device.</dd>
-	</dl>
-	<p>*These definitions are a living artifact, and thus, are subject to change without notice. ( as is everything )</p>
-</div><!-- .left -->
+</dl>
+
+**These definitions are a living artifact, and thus, are subject to change without notice. ( as is everything )*
